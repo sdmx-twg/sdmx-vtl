@@ -1,1 +1,4 @@
 /target/
+.DS_*
+.gitignore
+

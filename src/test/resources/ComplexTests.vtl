@@ -58,4 +58,4 @@ AddSector := check_hierarchy ( na_main , hr_sector) [ calc errorlevel1 := "Error
 
 // build the output dataset (for the validation report) by assembling together all temporary datasets
 // if rule_if is ot unique then raise an error
-union ( WrongEnvelop, LogicalChecks, ExtraSeries, Mandatory, Voluntary, Incomplete, ZeroNegativeValues, AddSector, Outliers )
+DS_r :=union ( WrongEnvelop, LogicalChecks, ExtraSeries, Mandatory, Voluntary, Incomplete, ZeroNegativeValues, AddSector, Outliers );
